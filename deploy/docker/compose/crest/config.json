@@ -1,0 +1,32 @@
+{
+    "Log": {
+        "Level": "info"
+    },
+    "Server": {
+        "Port": 3000
+    },
+    "LLMAdapters": {
+        "openai": {
+            "baseUrl": "https://api.openai.com/v1",
+            "provider": "openai",
+            "modelFilter": []
+        },
+        "local": {
+            "baseUrl": "http://host.docker.internal:11434",
+            "provider": "ollama",
+            "modelFilter": []
+        }
+    },
+    "Authentication": {
+        "user": {
+            "role": "user",
+            "secret": "REPLACE_WITH_BCRYPT_HASH_GENERATED_BY_server/hash.js"
+        }
+    },
+    "Embeddings": {
+        "ollama1": {
+            "adapter": "local",
+            "model": "mxbai-embed-large"
+        }
+    }
+}

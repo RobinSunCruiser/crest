@@ -1,0 +1,94 @@
+/* Common styles used across components */
+
+/* Auth/Login styles */
+.centerLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.fullWidthAuthPaper {
+  width: 100%;
+  max-width: 400px;
+}
+
+.authContainer {
+  text-align: center;
+}
+
+/* Message formatting styles */
+.preWrapText {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.monospace {
+  font-family: 'Courier New', Consolas, Monaco, monospace;
+  font-size: 0.9em;
+}
+
+.monospaceWithMargin {
+  font-family: monospace;
+  margin-bottom: 3px;
+}
+
+.monospaceWithLargeMargin {
+  font-family: monospace;
+  margin-bottom: 6px;
+}
+
+.clickableText {
+  cursor: pointer;
+  user-select: none;
+}
+
+.clickableText:hover {
+  text-decoration: underline;
+}
+
+/* Prompt styles */
+.promptSection {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* Layout utilities */
+.iconInline {
+  display: inline;
+  margin-right: 8px;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+/* Utility styles */
+.scrollable {
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.codeBlock {
+  font-family: 'Courier New', monospace;
+  background-color: #f5f5f5;
+  padding: 8px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.errorContainer {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fff5f5;
+  border: 1px solid #feb2b2;
+}
+
+.highlight {
+  background-color: #fef3c7;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
